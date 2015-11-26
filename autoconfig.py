@@ -1,26 +1,26 @@
 #!/usr/bin/python
 
-########################################################################################
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-#########################################################################################
-#
-# cpuskarz 11/25/2015 autoconfig.py v1
-# Program is an enhancement to EEM/GIT example in the Cisco NX-OS Programmability Guide.
-# Program is triggered from EEM script on N9k via copy running-config startup-config
-# Moves the output file to a directory on local GIT repo (in guestshell)
-# Git adds and commits the file, then pushes to a remote GIT repo
-#
-#########################################################################################
+####################################################################################
+# Licensed under the Apache License, Version 2.0 (the "License");                  #
+# you may not use this file except in compliance with the License.                 #
+# You may obtain a copy of the License at                                          #
+#                                                                                  #
+#     http://www.apache.org/licenses/LICENSE-2.0                                   #
+#                                                                                  #
+# Unless required by applicable law or agreed to in writing, software              #
+# distributed under the License is distributed on an "AS IS" BASIS,                #
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.         #
+# See the License for the specific language governing permissions and              #
+# limitations under the License.                                                   #
+####################################################################################
+#                                                                                  #
+####################################################################################
+# cpuskarz 11/25/2015 - autoconfig.py v1                                           #
+# Program is an enhancement to EEM/GIT example in the Cisco NX-OS Programmability  #
+# and Automation book. Program is triggered from EEM script on N9k -  copy         #
+# running-config startup-config; moves the output file to a directory on local     #
+# GIT repo; Git adds and commits the file, then pushes to a remote GIT repo.       #
+####################################################################################
 
 
 import os
@@ -41,7 +41,7 @@ fh2.write(set_count)
 fh2.close()
 set_message = "Changed configuration, version: %s" % set_count
 
-# Create file for output and errors
+# Create file for output and errors. Set up directory structure as needed.
 f = open("autoouptput.txt", "w")
 os.chdir("/home/guestshell/autoconfig")
 
