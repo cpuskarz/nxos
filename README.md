@@ -2,6 +2,8 @@
 
 SCRIPT: autoconfig.py
 
+Script is an enhancement from GIT/EEM example in Cisco NXOS Programmability and Automation book.
+http://www.cisco.com/c/dam/en/us/td/docs/switches/datacenter/nexus9000/sw/open_nxos/programmability/guide/Programmability_Open_NX-OS.pdf
 Script runs in N9k guestshell, triggered by EEM applet running on Nexus 9k. File is then moved to directory on local git repo
 on guestshell, then pushed to external git repo.
 
