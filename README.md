@@ -7,7 +7,8 @@ http://www.cisco.com/c/dam/en/us/td/docs/switches/datacenter/nexus9000/sw/open_n
 
 Couple of notes:
 1) You'll see a command in the .py of:  "push". Depending on your implementation of git/server, you might need:  "push origin master" instead.
-2) if you run into authentication challengs, check out this link: http://superuser.com/questions/338511/how-do-i-disable-password-prompts-when-doing-git-push-pull
+
+2) if you run into authentication challenges, check out this link: http://superuser.com/questions/338511/how-do-i-disable-password-prompts-when-doing-git-push-pull
 
 
 
