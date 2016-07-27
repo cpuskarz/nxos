@@ -1,0 +1,6 @@
+event manager applet trypy2
+  event cli match "copy running-config startup-config"
+  action 6 cli copy running bootflash:/autoconfig/running.latest
+  action 15 cli guestshell run python /home/guestshell/autoconfig.py
+  action 30 event-default
+
