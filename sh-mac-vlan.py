@@ -4,9 +4,9 @@ import json
 """
 Modify these please
 """
-url='http://10.91.86.244/ins'
-switchuser='admin'
-switchpassword='9letmein'
+url='http://url or ip/ins'
+switchuser='user name'
+switchpassword='password'
 
 def getip():
     user_ip = raw_input("Enter IP address: ")
